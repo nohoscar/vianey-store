@@ -64,3 +64,32 @@ Opción B: Borra la línea completa del CSV
 - No borres la primera línea del CSV (son los títulos)
 
 - Si algo sale mal, escríbeme y lo arreglamos
+
+
+=============================================
+  CONFIGURAR EN OTRA PC (nueva o formateada)
+=============================================
+
+PASO 1: Instalar Git
+       - Descarga de: https://git-scm.com
+       - Instala con todo por defecto (siguiente, siguiente...)
+
+PASO 2: Abrir la terminal (CMD o PowerShell) y escribir:
+
+       git config --global user.name "nohoscar"
+       git config --global user.email "sbkoscar@gmail.com"
+
+PASO 3: Descargar el proyecto (en la carpeta que quieras):
+
+       git clone https://github.com/nohoscar/vianey-store.git
+
+       Esto crea una carpeta "vianey-store" con todo el proyecto.
+
+PASO 4: La primera vez que hagas doble clic en "subir.bat"
+       te va a pedir iniciar sesion en GitHub.
+       Se abre el navegador, le das permiso y listo.
+
+IMPORTANTE:
+- NO copies la carpeta con USB, usa "git clone"
+- Si copias con USB se pierde la conexion a GitHub
+- Solo necesitas hacer esto UNA VEZ por computadora
