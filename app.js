@@ -1,5 +1,5 @@
 // ==========================================
-// NOVA STORE - App Logic
+// VIANEY STORE - App Logic
 // ==========================================
 
 // Configuración - CAMBIA TU NÚMERO AQUÍ
