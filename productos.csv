@@ -45,3 +45,4 @@ id,nombre,categoria,precio,imagen,tallas,stock,descripcion
 44,Prenda 44,hombre,400,img/ropa_44.jpg,"M,L,XL",2,Prenda de hombre excelente calidad
 45,prueba,prueba,prueba,prueba,prueba,prueba,prueba
 46,js,js,js,js,js,js,js
+47,oscar,oscar,oscar,oscar,oscar,oscar,oscar
