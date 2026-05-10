@@ -172,6 +172,12 @@ function renderProducts() {
         }
 
         const isOutOfStock = product.stock === 0;
+        const waMessage = `Hola! Me interesa este producto:\n\n` +
+            `📌 *${product.nombre}*\n` +
+            `💰 Precio: $${product.precio}\n` +
+            `👗 Categoría: ${getCategoryLabel(product.categoria)}\n` +
+            `📷 Foto: ${window.location.origin}/${product.imagen}\n\n` +
+            `¿Está disponible?`;
 
         return `
         <div class="product-card ${isOutOfStock ? 'out-of-stock' : ''}" onclick="openModal(${product.id})" style="animation-delay: ${index * 0.05}s">
@@ -180,7 +186,7 @@ function renderProducts() {
                 <span class="product-badge badge-${product.categoria}">${getCategoryLabel(product.categoria)}</span>
                 ${stockLabel}
                 ${!isOutOfStock ? `
-                <a href="https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('Hola, me interesa: ' + product.nombre + ' ($' + product.precio + ')')}" 
+                <a href="https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(waMessage)}" 
                    class="product-quick-action" 
                    target="_blank"
                    onclick="event.stopPropagation()"
@@ -243,7 +249,13 @@ function openModal(productId) {
         whatsappLink.style.display = 'none';
     } else {
         whatsappLink.style.display = 'inline-flex';
-        whatsappLink.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('Hola, me interesa: ' + product.nombre + ' - $' + product.precio + '. ¿Está disponible?')}`;
+        const modalMessage = `Hola! Me interesa este producto:\n\n` +
+            `📌 *${product.nombre}*\n` +
+            `💰 Precio: $${product.precio}\n` +
+            `👗 Categoría: ${getCategoryLabel(product.categoria)}\n` +
+            `📷 Foto: ${window.location.origin}/${product.imagen}\n\n` +
+            `¿Está disponible?`;
+        whatsappLink.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(modalMessage)}`;
     }
 
     document.getElementById('product-modal').classList.add('active');
@@ -264,8 +276,15 @@ function selectSize(btn) {
     const product = document.getElementById('modal-name').textContent;
     const price = document.getElementById('modal-price').textContent;
     const size = btn.textContent;
+    const img = document.getElementById('modal-img').src;
     const whatsappLink = document.getElementById('modal-whatsapp');
-    whatsappLink.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('Hola, me interesa: ' + product + ' - ' + price + ', Talla: ' + size + '. ¿Está disponible?')}`;
+    const message = `Hola! Me interesa este producto:\n\n` +
+        `📌 *${product}*\n` +
+        `💰 Precio: ${price}\n` +
+        `📏 Talla: ${size}\n` +
+        `📷 Foto: ${img}\n\n` +
+        `¿Está disponible en esa talla?`;
+    whatsappLink.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 }
 
 // Actualizar todos los links de WhatsApp con el número configurado
