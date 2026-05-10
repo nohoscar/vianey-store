@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVA Store | Ropa de Verano en Mérida</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Barra superior de info -->
+    <div class="top-bar">
+        <div class="container">
+            <p>� Entregas solo en Mérida, Yucatán | 💬 Pedidos por WhatsApp</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="#">NOVA<span>store</span></a>
+                </div>
+                <nav class="nav" id="main-nav">
+                    <a href="#inicio" class="nav-link">Inicio</a>
+                    <a href="#categorias" class="nav-link">Categorías</a>
+                    <a href="#catalogo" class="nav-link">Catálogo</a>
+                    <a href="#contacto" class="nav-link">Contacto</a>
+                </nav>
+                <div class="header-actions">
+                    <button class="search-toggle" id="search-toggle" aria-label="Buscar">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <a href="https://wa.me/529993953602?text=Hola%2C%20me%20interesa%20un%20producto" class="btn-whatsapp-header" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Pedir
+                    </a>
+                    <button class="menu-toggle" id="menu-toggle" aria-label="Menú">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Barra de búsqueda expandible -->
+            <div class="search-bar" id="search-bar">
+                <input type="text" id="search-input" placeholder="¿Qué estás buscando?">
+                <button class="search-close" id="search-close"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="hero-tag">☀️ Colección Verano 2026</span>
+                <h1>Ropa fresca para <br><em>este calor</em></h1>
+                <p>Prendas ligeras, cómodas y con estilo para toda la familia. Perfectas para el clima de Mérida.</p>
+                <div class="hero-buttons">
+                    <a href="#catalogo" class="btn btn-primary">Ver Catálogo</a>
+                    <a href="https://wa.me/529993953602?text=Hola%2C%20quiero%20ver%20el%20catálogo" class="btn btn-outline" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Escríbenos
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="img/ropa_1.jpg" alt="Colección Verano">
+            </div>
+        </div>
+    </section>
+
+    <!-- Categorías -->
+    <section class="categories" id="categorias">
+        <div class="container">
+            <div class="section-header">
+                <h2>Categorías</h2>
+                <p>Ropa ligera y fresca para este verano</p>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card" data-filter="mujer">
+                    <div class="category-image">
+                        <img src="img/ropa_2.jpg" alt="Ropa de Mujer">
+                    </div>
+                    <div class="category-overlay">
+                        <h3>Mujer</h3>
+                        <span>Ver colección →</span>
+                    </div>
+                </div>
+                <div class="category-card" data-filter="hombre">
+                    <div class="category-image">
+                        <img src="img/ropa_3.jpg" alt="Ropa de Hombre">
+                    </div>
+                    <div class="category-overlay">
+                        <h3>Hombre</h3>
+                        <span>Ver colección →</span>
+                    </div>
+                </div>
+                <div class="category-card" data-filter="ninos">
+                    <div class="category-image">
+                        <img src="img/ropa_5.jpg" alt="Ropa de Niños">
+                    </div>
+                    <div class="category-overlay">
+                        <h3>Niños</h3>
+                        <span>Ver colección →</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catálogo -->
+    <section class="catalog" id="catalogo">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestro Catálogo</h2>
+                <p>Prendas frescas y con estilo para el calor yucateco ☀️</p>
+            </div>
+
+            <!-- Filtros -->
+            <div class="catalog-filters">
+                <div class="filter-tabs">
+                    <button class="filter-tab active" data-filter="todos">Todos</button>
+                    <button class="filter-tab" data-filter="mujer">Mujer</button>
+                    <button class="filter-tab" data-filter="hombre">Hombre</button>
+                    <button class="filter-tab" data-filter="ninos">Niños</button>
+                </div>
+                <div class="filter-options">
+                    <select id="sort-select">
+                        <option value="default">Ordenar por</option>
+                        <option value="precio-asc">Precio: Menor a Mayor</option>
+                        <option value="precio-desc">Precio: Mayor a Menor</option>
+                        <option value="nombre">Nombre A-Z</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Grid de productos -->
+            <div class="products-grid" id="products-grid">
+                <!-- Se carga dinámicamente -->
+            </div>
+
+            <!-- Botón cargar más -->
+            <div class="load-more-container" id="load-more-container">
+                <button class="btn btn-outline" id="load-more-btn">Cargar más productos</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section class="benefits">
+        <div class="container">
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <h4>Pedidos por WhatsApp</h4>
+                    <p>Te atendemos rápido y fácil</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>Entregas en Mérida</h4>
+                    <p>Solo zona Mérida, Yucatán</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <h4>Pago al recibir</h4>
+                    <p>Pagas cuando te llega</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>¿Te interesa algo?</h2>
+                    <p>Escríbenos por WhatsApp y te atendemos al instante. Pregunta por tallas, precios y disponibilidad.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <div>
+                                <strong>WhatsApp</strong>
+                                <p>999 395 3602</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong>Horario de atención</strong>
+                                <p>Lunes a Sábado: 9:00 AM - 8:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Ubicación</strong>
+                                <p>Mérida, Yucatán</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/529993953602?text=Hola%2C%20quiero%20información%20sobre%20un%20producto" class="btn btn-whatsapp-big" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Enviar mensaje por WhatsApp
+                    </a>
+                </div>
+                <div class="contact-image">
+                    <img src="img/ropa_20.jpg" alt="Contacto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>NOVA<span>store</span></h3>
+                    <p>Ropa fresca y con estilo para toda la familia en Mérida. Perfecta para el verano yucateco.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Navegación</h4>
+                    <a href="#inicio">Inicio</a>
+                    <a href="#categorias">Categorías</a>
+                    <a href="#catalogo">Catálogo</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Categorías</h4>
+                    <a href="#" data-filter="mujer">Mujer</a>
+                    <a href="#" data-filter="hombre">Hombre</a>
+                    <a href="#" data-filter="ninos">Niños</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Contacto</h4>
+                    <a href="https://wa.me/529993953602" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    <a href="#"><i class="fas fa-envelope"></i> correo@ejemplo.com</a>
+                    <a href="tel:+529993953602"><i class="fas fa-phone"></i> 999 395 3602</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 NOVA Store. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/529993953602?text=Hola%2C%20vi%20su%20catálogo%20y%20me%20interesa%20un%20producto" 
+       class="whatsapp-float" 
+       target="_blank"
+       aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">¿Necesitas ayuda?</span>
+    </a>
+
+    <!-- Modal de producto -->
+    <div class="modal" id="product-modal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Cerrar">&times;</button>
+            <div class="modal-body">
+                <div class="modal-gallery">
+                    <img id="modal-img" src="" alt="">
+                </div>
+                <div class="modal-info">
+                    <span class="modal-badge" id="modal-badge"></span>
+                    <h2 id="modal-name"></h2>
+                    <p class="modal-price" id="modal-price"></p>
+                    <p class="modal-description" id="modal-description"></p>
+                    <div class="modal-section">
+                        <h4>Tallas disponibles</h4>
+                        <div class="modal-sizes" id="modal-sizes"></div>
+                    </div>
+                    <a href="#" class="btn btn-whatsapp-big modal-whatsapp" id="modal-whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+                    </a>
+                    <p class="modal-note">💬 Te respondemos en minutos</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="products.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

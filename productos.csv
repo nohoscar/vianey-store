@@ -1,0 +1,45 @@
+id,nombre,categoria,precio,imagen,tallas,stock,descripcion
+1,Prenda 1,mujer,299,img/ropa_1.jpg,"S,M,L",5,Prenda de mujer excelente calidad
+2,Prenda 2,mujer,349,img/ropa_2.jpg,"S,M,L,XL",3,Prenda de mujer excelente calidad
+3,Prenda 3,hombre,399,img/ropa_3.jpg,"M,L,XL",4,Prenda de hombre excelente calidad
+4,Prenda 4,hombre,279,img/ropa_4.jpg,"S,M,L",2,Prenda de hombre excelente calidad
+5,Prenda 5,ninos,199,img/ropa_5.jpg,"4,6,8,10",6,Prenda para niños comoda y resistente
+6,Prenda 6,mujer,450,img/ropa_6.jpg,"S,M,L",3,Prenda de mujer excelente calidad
+7,Prenda 7,hombre,320,img/ropa_7.jpg,"M,L,XL",4,Prenda de hombre excelente calidad
+8,Prenda 8,ninos,180,img/ropa_8.jpg,"4,6,8",5,Prenda para niños comoda y resistente
+9,Prenda 9,mujer,520,img/ropa_9.jpg,"S,M,L,XL",2,Prenda de mujer excelente calidad
+10,Prenda 10,hombre,380,img/ropa_10.jpg,"S,M,L,XL",3,Prenda de hombre excelente calidad
+11,Prenda 11,ninos,220,img/ropa_11.jpg,"4,6,8,10,12",7,Prenda para niños comoda y resistente
+12,Prenda 12,mujer,410,img/ropa_12.jpg,"S,M,L",2,Prenda de mujer excelente calidad
+13,Prenda 13,hombre,350,img/ropa_13.jpg,"M,L,XL",4,Prenda de hombre excelente calidad
+14,Prenda 14,mujer,290,img/ropa_14.jpg,"S,M",3,Prenda de mujer excelente calidad
+15,Prenda 15,ninos,175,img/ropa_15.jpg,"4,6,8",5,Prenda para niños comoda y resistente
+16,Prenda 16,hombre,430,img/ropa_16.jpg,"S,M,L,XL",2,Prenda de hombre excelente calidad
+17,Prenda 17,mujer,360,img/ropa_17.jpg,"S,M,L",4,Prenda de mujer excelente calidad
+18,Prenda 18,ninos,210,img/ropa_18.jpg,"6,8,10",3,Prenda para niños comoda y resistente
+19,Prenda 19,hombre,299,img/ropa_19.jpg,"M,L",2,Prenda de hombre excelente calidad
+20,Prenda 20,mujer,480,img/ropa_20.jpg,"S,M,L,XL",3,Prenda de mujer excelente calidad
+21,Prenda 21,mujer,310,img/ropa_21.jpg,"S,M,L",4,Prenda de mujer excelente calidad
+22,Prenda 22,hombre,370,img/ropa_22.jpg,"M,L,XL",3,Prenda de hombre excelente calidad
+23,Prenda 23,ninos,195,img/ropa_23.jpg,"4,6,8,10",6,Prenda para niños comoda y resistente
+24,Prenda 24,mujer,540,img/ropa_24.jpg,"S,M,L",1,Prenda de mujer excelente calidad
+25,Prenda 25,hombre,420,img/ropa_25.jpg,"S,M,L,XL",3,Prenda de hombre excelente calidad
+26,Prenda 26,ninos,165,img/ropa_26.jpg,"4,6,8",5,Prenda para niños comoda y resistente
+27,Prenda 27,mujer,330,img/ropa_27.jpg,"S,M,L",4,Prenda de mujer excelente calidad
+28,Prenda 28,hombre,290,img/ropa_28.jpg,"M,L,XL",2,Prenda de hombre excelente calidad
+29,Prenda 29,ninos,230,img/ropa_29.jpg,"6,8,10,12",4,Prenda para niños comoda y resistente
+30,Prenda 30,mujer,460,img/ropa_30.jpg,"S,M,L",2,Prenda de mujer excelente calidad
+31,Prenda 31,hombre,340,img/ropa_31.jpg,"S,M,L",3,Prenda de hombre excelente calidad
+32,Prenda 32,mujer,275,img/ropa_32.jpg,"S,M",4,Prenda de mujer excelente calidad
+33,Prenda 33,ninos,185,img/ropa_33.jpg,"4,6,8",6,Prenda para niños comoda y resistente
+34,Prenda 34,hombre,410,img/ropa_34.jpg,"M,L,XL",2,Prenda de hombre excelente calidad
+35,Prenda 35,mujer,390,img/ropa_35.jpg,"S,M,L,XL",3,Prenda de mujer excelente calidad
+36,Prenda 36,ninos,200,img/ropa_36.jpg,"4,6,8,10",5,Prenda para niños comoda y resistente
+37,Prenda 37,hombre,360,img/ropa_37.jpg,"S,M,L",3,Prenda de hombre excelente calidad
+38,Prenda 38,mujer,500,img/ropa_38.jpg,"S,M,L",2,Prenda de mujer excelente calidad
+39,Prenda 39,ninos,170,img/ropa_39.jpg,"4,6,8",7,Prenda para niños comoda y resistente
+40,Prenda 40,hombre,450,img/ropa_40.jpg,"M,L,XL",2,Prenda de hombre excelente calidad
+41,Prenda 41,mujer,320,img/ropa_41.jpg,"S,M,L",4,Prenda de mujer excelente calidad
+42,Prenda 42,hombre,380,img/ropa_42.jpg,"S,M,L,XL",3,Prenda de hombre excelente calidad
+43,Prenda 43,mujer,350,img/ropa_43.jpg,"S,M,L",3,Prenda de mujer excelente calidad
+44,Prenda 44,hombre,400,img/ropa_44.jpg,"M,L,XL",2,Prenda de hombre excelente calidad

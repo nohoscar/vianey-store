@@ -1,0 +1,66 @@
+=============================================
+  CÓMO ACTUALIZAR LOS PRODUCTOS DE LA TIENDA
+=============================================
+
+PARA TI O TU ESPOSA - Es muy fácil:
+
+PASO 1: Abrir el archivo "productos.csv" con Excel
+       (doble clic y se abre)
+
+PASO 2: Editar lo que necesites:
+       - Cambiar nombre de un producto
+       - Cambiar precio
+       - Cambiar tallas (separadas por coma)
+       - Cambiar stock (cantidad disponible)
+       - Poner 0 en stock = aparece como "Agotado"
+
+PASO 3: Guardar el archivo (Ctrl + S)
+       IMPORTANTE: Guardar como CSV, NO como .xlsx
+
+PASO 4: Hacer doble clic en "subir.bat"
+       Esto sube los cambios automáticamente.
+       Espera a que diga "LISTO" y cierra.
+
+¡Eso es todo! En unos segundos la página se actualiza.
+
+=============================================
+  COLUMNAS DEL ARCHIVO productos.csv
+=============================================
+
+id        = Número único (no repetir)
+nombre    = Nombre del producto (lo que ve el cliente)
+categoria = mujer, hombre, o ninos (sin ñ)
+precio    = Solo el número, sin $ ni comas
+imagen    = img/ropa_X.jpg (nombre de la foto)
+tallas    = Las tallas separadas por coma: "S,M,L"
+stock     = Cuántas piezas tienes (0 = agotado)
+descripcion = Texto corto describiendo la prenda
+
+=============================================
+  PARA AGREGAR UN PRODUCTO NUEVO
+=============================================
+
+1. Pon la foto nueva en la carpeta "img"
+   (nómbrala como ropa_45.jpg, ropa_46.jpg, etc.)
+
+2. Agrega una línea nueva al final del CSV con los datos
+
+3. Guarda y haz doble clic en "subir.bat"
+
+=============================================
+  PARA QUITAR UN PRODUCTO
+=============================================
+
+Opción A: Pon el stock en 0 (aparece como agotado)
+Opción B: Borra la línea completa del CSV
+
+=============================================
+  NOTAS
+=============================================
+
+- Si Excel te pregunta el formato al guardar,
+  elige "CSV (delimitado por comas)"
+  
+- No borres la primera línea del CSV (son los títulos)
+
+- Si algo sale mal, escríbeme y lo arreglamos
