@@ -44,3 +44,4 @@ id,nombre,categoria,precio,imagen,tallas,stock,descripcion
 43,Prenda 43,mujer,350,img/ropa_43.jpg,"S,M,L",3,Prenda de mujer excelente calidad
 44,Prenda 44,hombre,400,img/ropa_44.jpg,"M,L,XL",2,Prenda de hombre excelente calidad
 45,prueba,prueba,prueba,prueba,prueba,prueba,prueba
+46,js,js,js,js,js,js,js
